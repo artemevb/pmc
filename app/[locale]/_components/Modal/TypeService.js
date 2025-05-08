@@ -116,7 +116,7 @@ export default function QuestionSent({ closeModal }) {
         };
 
         try {
-            const response = await axios.post("https://pmc.result-me.uz/v1/application/create", payload);
+            const response = await axios.post("https://api.pmc.dr-psixoterapevt.uz/v1/application/create", payload);
             if (response.status === 200 || response.status === 201) {
                 setShowModalOk(true);
                 setValues({ name: "", phone: "", comment: "" }); // Reset comment field
@@ -130,7 +130,7 @@ export default function QuestionSent({ closeModal }) {
 
     const handleAppointmentClick = async () => {
         try {
-            const response = await fetch('https://pmc.result-me.uz/v1/counter/add?button=MAKE_AN_APPOINTMENT', {
+            const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/counter/add?button=MAKE_AN_APPOINTMENT', {
                 method: 'POST',
             });
             if (response.ok) {

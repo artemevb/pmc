@@ -45,7 +45,7 @@ function Footer({ locale }) {
 
   const handleTelegramClick = async () => {
     try {
-      const response = await fetch('https://pmc.result-me.uz/v1/counter/add?button=TELEGRAM_FOR_BLOG', {
+      const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/counter/add?button=TELEGRAM_FOR_BLOG', {
         method: 'POST',
       });
 
@@ -59,7 +59,7 @@ function Footer({ locale }) {
 
   const handleTelegramiconClick = async () => {
     try {
-      const response = await fetch('https://pmc.result-me.uz/v1/counter/add?button=TELEGRAM_FOOTER', {
+      const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/counter/add?button=TELEGRAM_FOOTER', {
         method: 'POST',
       });
 
@@ -73,7 +73,7 @@ function Footer({ locale }) {
 
   const handleInstagramiconClick = async () => {
     try {
-      const response = await fetch('https://pmc.result-me.uz/v1/counter/add?button=INSTAGRAM_FOOTER', {
+      const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/counter/add?button=INSTAGRAM_FOOTER', {
         method: 'POST',
       });
 
@@ -88,7 +88,7 @@ function Footer({ locale }) {
 
   const handleFacebookiconClick = async () => {
     try {
-      const response = await fetch('https://pmc.result-me.uz/v1/counter/add?button=FACEBOOK_FOOTER', {
+      const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/counter/add?button=FACEBOOK_FOOTER', {
         method: 'POST',
       });
 
@@ -101,7 +101,7 @@ function Footer({ locale }) {
 
   const handleYoutubeiconClick = async () => {
     try {
-      const response = await fetch('https://pmc.result-me.uz/v1/counter/add?button=YOUTUBE_FOOTER', {
+      const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/counter/add?button=YOUTUBE_FOOTER', {
         method: 'POST',
       });
 

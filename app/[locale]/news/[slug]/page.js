@@ -8,7 +8,7 @@ import OtherNews from "../../_components/NewsMain/OtherNews";
 
 export async function generateMetadata({ params }) {
     const { slug, locale } = params
-    const url = `https://pmc.result-me.uz/v1/newness/get/${slug}`
+    const url = `https://api.pmc.dr-psixoterapevt.uz/v1/newness/get/${slug}`
 
     try {
         const response = await fetch(url, {
@@ -72,7 +72,7 @@ export async function generateMetadata({ params }) {
 
 export default async function NewsDetailPage({ params }) {
     const { slug, locale } = params
-    const url = `https://pmc.result-me.uz/v1/newness/get/${slug}`
+    const url = `https://api.pmc.dr-psixoterapevt.uz/v1/newness/get/${slug}`
 
     let newsItem = null
     let error = null

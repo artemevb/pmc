@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
     const { slug, locale } = params;
 
     try {
-        const response = await axios.get(`https://pmc.result-me.uz/v1/doctor/get/${slug}`, {
+        const response = await axios.get(`https://api.pmc.dr-psixoterapevt.uz/v1/doctor/get/${slug}`, {
             headers: {
                 'Accept-Language': locale,
             }
@@ -58,7 +58,7 @@ export default async function Page({ params }) {
 
     let doctorData;
     try {
-        const response = await axios.get(`https://pmc.result-me.uz/v1/doctor/get/${slug}`, {
+        const response = await axios.get(`https://api.pmc.dr-psixoterapevt.uz/v1/doctor/get/${slug}`, {
             headers: {
                 'Accept-Language': locale,
             }

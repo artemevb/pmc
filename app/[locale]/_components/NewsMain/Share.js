@@ -25,7 +25,7 @@ export default function NewsTitle({ locale }) {
         const fetchNewsWithSlug = async () => {
             try {
                 const response = await axios.get(
-                    `https://pmc.result-me.uz/v1/newness/get/${slug}`,
+                    `https://api.pmc.dr-psixoterapevt.uz/v1/newness/get/${slug}`,
                     {
                         headers: { 'Accept-Language': locale },
                     }

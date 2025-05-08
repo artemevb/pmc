@@ -14,7 +14,7 @@ export default function OtherNewsList({ locale, currentSlug }) {
     useEffect(() => {
         const fetchOtherNews = async () => {
             try {
-                const response = await fetch('https://pmc.result-me.uz/v1/newness/get-all', {
+                const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/newness/get-all', {
                     headers: {
                         'Accept-Language': locale
                     }

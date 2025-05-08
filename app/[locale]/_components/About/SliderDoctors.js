@@ -22,7 +22,7 @@ const DoctorsSlider = ({ locale }) => {
 
             try {
                 const response = await axios.get(
-                    'https://pmc.result-me.uz/v1/doctor/get-all',
+                    'https://api.pmc.dr-psixoterapevt.uz/v1/doctor/get-all',
                     {
                         headers: { 'Accept-Language': locale },
                     }

@@ -91,7 +91,7 @@ export default function ContAddress() {
         };
 
         try {
-            const response = await axios.post("https://pmc.result-me.uz/v1/application/create", payload);
+            const response = await axios.post("https://api.pmc.dr-psixoterapevt.uz/v1/application/create", payload);
             if (response.status === 200 || response.status === 201) { // В зависимости от ответа API
                 setIsSubmitted(true);
             } else {
@@ -106,7 +106,7 @@ export default function ContAddress() {
 
     const handleAppointmentClick = async () => {
         try {
-            const response = await fetch('https://pmc.result-me.uz/v1/counter/add?button=MAKE_AN_APPOINTMENT', {
+            const response = await fetch('https://api.pmc.dr-psixoterapevt.uz/v1/counter/add?button=MAKE_AN_APPOINTMENT', {
                 method: 'POST',
             });
             if (response.ok) {

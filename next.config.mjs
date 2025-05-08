@@ -5,7 +5,7 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['pmc.result-me.uz'], // Добавьте домен, откуда будут загружаться изображения
+        domains: ['api.pmc.dr-psixoterapevt.uz'], // Добавьте домен, откуда будут загружаться изображения
     },
 };
 
